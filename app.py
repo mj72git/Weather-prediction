@@ -11,6 +11,7 @@ model = load_model('model.h5')
 scaler = joblib.load('scaler.pkl')
 
 st.title("🌤️ Next-Day Temperature Predictor (Tehran)")
+st.write("M.J.Shadfar")
 st.write("Enter the temperatures of the last 30 days (°C) to predict tomorrow's temperature.")
 
 # User input for 30 days
