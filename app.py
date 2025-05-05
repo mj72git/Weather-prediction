@@ -27,3 +27,12 @@ if st.button("Predict"):
     y_pred = scaler.inverse_transform(y_pred_scaled)
 
     st.success(f"🌡️ Predicted temperature for tomorrow: **{y_pred[0][0]:.2f} °C**")
+    
+    
+# پانوشت
+st.caption("App created by MJ Shadfar - [GitHub](https://github.com/mj72git)")
+# نمایش عکس
+try:
+    st.image("1.jpg", width=100)
+except:
+    st.warning("⚠️ Could not load image.")
